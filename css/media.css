@@ -3,6 +3,11 @@
     max-width: 426px;
   }
 }
+@media screen and (max-width: 428px) {
+  .mob-contacts-tel {
+    font-size: 20px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -12,6 +17,10 @@
   .content {
     display: flex;
     gap: 40px;
+  }
+
+  .menu-open-btn {
+    display: none;
   }
 
   .content-list {
@@ -34,8 +43,10 @@
 
   .contacts-list {
     display: flex;
-    align-items: center;
-    gap: 40px;
+    flex-direction: column;
+    gap: 12px;
+    /* align-items: center; */
+    /* gap: 40px; */
   }
   .content-list {
     color: var(--primary-black-color);
@@ -128,6 +139,7 @@
 
   .bottom-text {
     max-width: 264px;
+    margin: 0;
   }
 
   .bottom-container {
@@ -135,6 +147,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 72px 24px;
+  }
+
+  @media screen and (min-width: 758px) and (max-width: 1157px) {
+    .bottom-container {
+      width: 582px;
+      justify-content: start;
+    }
   }
 
   .bottom-container-item {
@@ -182,6 +201,16 @@
         ),
         url(../images/people-office-2x.jpg);
     }
+  }
+
+  .logo {
+    margin-right: 76px;
+  }
+
+  .contacts-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
   }
 
   .advantages-list {

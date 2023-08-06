@@ -70,11 +70,108 @@
             </li>
           </ul>
         </address>
-        <button class="menu-open-btn" type="button">
+        <button class="menu-open-btn" type="button" data-menu-open>
           <svg class="header-icon-svg" width="32" height="22">
-            <use href="./images/icons.svg#icon-checkbox"></use>
+            <use href="./images/icons.svg#header-icon"></use>
           </svg>
         </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="mob-close-btn" data-menu-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mob-content list">
+          <li class="mob-content-item">
+            <a
+              class="mob-content-list current link"
+              href="./index.html"
+              style="text-decoration: none"
+              >Studio</a
+            >
+          </li>
+          <li class="mob-content-item">
+            <a
+              class="mob-content-list link"
+              href="./portfolio.html"
+              style="text-decoration: none"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mob-content-item">
+            <a
+              class="mob-content-list link"
+              href=""
+              style="text-decoration: none"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+        <div>
+          <ul class="mob-contacts list">
+            <li class="mob-contacts-list">
+              <a class="mob-contacts-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-contacts-listen">
+              <a
+                class="mob-contacts-email link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list mob-social">
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link"
+                href=""
+                aria-label="instagram"
+                target="_blank"
+                rel="noopener no-referrer"
+              >
+                <svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link"
+                href=""
+                aria-label="twitter"
+                target="_blank"
+                rel="noopener no-referrer"
+                ><svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter-1"></use></svg
+              ></a>
+            </li>
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link"
+                href=""
+                aria-label="facebook"
+                target="_blank"
+                rel="noopener no-referrer"
+                ><svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook-1"></use></svg
+              ></a>
+            </li>
+            <li class="mob-social-item">
+              <a
+                class="mob-social-link"
+                href=""
+                aria-label="linkedin"
+                target="_blank"
+                rel="noopener no-referrer"
+                ><svg class="mob-social-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -150,7 +247,7 @@
           <ul class="portfolio-list list">
             <li class="portfolio-item">
               <img
-                srcset="./images/img1.jpg 1x, ./images/img-2x.jpg 2x"
+                srcset="./images/img1.jpg 1x, ./images/img1-2x-min.jpg 2x"
                 src="./images/img1.jpg"
                 alt="statistical graphs on the monitor"
                 width="360"
@@ -159,7 +256,7 @@
             </li>
             <li class="portfolio-item">
               <img
-                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                srcset="./images/img2.jpg 1x, ./images/img2-2x-min.jpg 2x"
                 src="./images/img2.jpg"
                 alt="an application with a messenger function"
                 width="360"
@@ -168,7 +265,7 @@
             </li>
             <li class="portfolio-item">
               <img
-                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
+                srcset="./images/img3.jpg 1x, ./images/img3-2x-min.jpg 2x"
                 src="./images/img3.jpg"
                 alt="adaptation for different devices"
                 width="360"
@@ -607,7 +704,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -691,6 +788,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
