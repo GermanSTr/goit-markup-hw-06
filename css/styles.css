@@ -98,7 +98,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 120px;
+  /* margin-right: 120px; */
   /* margin-right: 76px; */
   padding: 24px 0;
 }
@@ -213,9 +213,14 @@ button {
 }
 
 .mob-contacts {
+  margin-bottom: 48px;
 }
 .mob-contacts-list {
   margin-bottom: 40px;
+}
+
+.current {
+  color: #404bbf;
 }
 .mob-contacts-tel {
   min-width: 320px;
@@ -225,12 +230,6 @@ button {
   line-height: 1.11;
   letter-spacing: 0.03em;
   text-transform: capitalize;
-}
-
-@media screen and (max-width: 427px) {
-  .mob-contacts-tel {
-    font-size: 20px;
-  }
 }
 
 .mob-contacts-email {
@@ -259,7 +258,6 @@ button {
 }
 
 .mob-contacts-listen {
-  margin-bottom: 48px;
 }
 
 .mob-social-link:focus {
